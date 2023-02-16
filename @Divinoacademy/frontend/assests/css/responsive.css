@@ -1,0 +1,172 @@
+@media only screen and (min-width: 568px) {
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+    html, html[data-theme="light"] {
+        --root-bg: #E8EAF6;
+        --root-color: #393e46;
+        --box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+        --hover-bg: rgba(0, 0, 0, 0.3);
+        --hover-color: #ffffff;
+        --hover-theme-bg: rgba(0, 0, 0, 0.3);
+        --main-sub-containers: white;
+
+        /*----Heading Nav---*/
+        --heading-bg: #1f2772;
+        --heading-color: #EEEEEE;
+        --heading-logo-color: white;
+        --heading-logo-font-family: 'Nunito', sans-serif;
+        --heading-font-family: Verdana;
+
+        /*----Footer Nav---*/
+        --footer-bg: #1f2772;
+        --footer-color: #EEEEEE;
+        --heading-font-family: Verdana;
+    }
+    html[data-theme='dark'] {
+        --root-bg: #232931;
+        --root-color: #B5B5B5;
+        --hover-bg: rgba(273, 273, 273, 0.4);
+        --hover-theme-bg: rgba(0, 0, 0, 0.9);
+        --main-sub-containers: black;
+        /*-----Heading Nav------*/
+        --heading-logo-color: #00ADB5;
+        --heading-color: #B5B5B5;
+
+        /*------Footer Nav-------*/
+        --footer-color: #B5B5B5;
+
+        background-color: var(--root-bg);
+    }
+    /* transition */
+    html .transition,
+    html .transition *,
+    html .transition *:before,
+    html .transition *:after {
+        transition: all 750ms !important;
+        transition-delay: 0 !important;
+    }
+    footer .footer-nav {
+        display: none;
+    }
+
+    body {
+        background-color: var(--root-bg);
+    }
+    header nav .more-icon {
+        display: none;
+        margin: 0;
+    }
+    header nav .desktop-theme-switch-icon, header nav .desktop-sign-out-icon {
+        display: inline-block;
+        margin: 5px 8px 5px 2px;
+    }
+    header nav .desktop-theme-switch-icon {
+        transform: translateY(-5px);
+    }
+    main {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        min-height: 100vh;
+        max-height: 100vh;
+        padding: 15px 15px 3px 20px;
+        background-color: var(--root-bg);
+        flex-wrap: nowrap;
+    }
+    main .main-section {
+        position: sticky;
+        top: 50px;
+        right: 5px;
+        flex: 73%;
+        width: 73%;
+        height: 100vh;
+        background-color: var(--main-sub-containers);
+        overflow-y: scroll;
+        color: var(--root-color);
+        border-radius: 10px;
+    }
+    main .features-container .col {
+        height: 380px;
+        flex: 40%;
+        width: 30%;
+    }
+    main aside {
+        position: sticky;
+        top: 50px;
+        left: 5px;
+        display: block;
+        flex: 15%;
+        width: 15%;
+        height: 100vh;
+        margin: 0 15px;
+        padding: 10px 0;
+        background-color: var(--main-sub-containers);
+        color: var(--root-color);
+        overflow-y: scroll;
+        border-radius: 10px;
+    }
+    main aside .desktop-1-menu {
+        min-height: auto;
+        max-height: 40%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        overflow-y: scroll;
+    }
+    main aside .desktop-2-menu {
+        max-height: 100%;
+        margin-top: 10px;
+        overflow-y: scroll;
+    }
+    main aside ul {
+        list-style: none;
+        margin: 0;
+        padding: 15px 10px;
+        display: block;
+    }
+    main aside ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 5px 15px;
+        transition: 10ms ease;
+    }
+    main aside ul li:hover {
+        background-color: var(--hover-bg);
+        color: var(--hover-color);
+    }
+    main aside ul li div {
+        display: inline-block;
+    }
+    main aside ul li div:first-child {
+        margin-right: 15px;
+    }
+    main aside .desktop-1-menu {
+        min-height: auto;
+        max-height: 40%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        overflow-y: scroll;
+    }
+    main aside .desktop-2-menu {
+        max-height: 100%;
+        margin-top: 10px;
+        overflow-y: scroll;
+    }
+    main aside .desktop-1-menu .desktop-1-menu-btn {
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main aside .desktop-1-menu-btn button {
+        display: block;
+        font-size: 15px;
+        text-align: center;
+        padding: 10px 20px;
+        margin: auto;
+    }
+}
